@@ -41,7 +41,7 @@ class Maze:
         self.totSquares = (PLAY_WIDTH * PLAY_HEIGHT) # How many maze cells to visit in total
         self.visitCount = 0
         self.stack = deque()                         # To hold current path
-        #Hold maze as big fuck off 1d list. Below seems right dimensions wise
+        #Hold maze as big  1d list. Below seems right dimensions wise
         self.maze = [Cell(x%PLAY_WIDTH,x//PLAY_WIDTH,(0,0,0,0,0)) for x in range(self.totSquares)]
        
         self.DS  = pg.display.set_mode(WINSIZE)
